@@ -9,18 +9,18 @@ module.exports = (sequelize, DataTypes) => {
             timestamps: false
         }
     );
-    // Usuario.associate = (models) => {
-    //     //relação 1:N
-    //     Usuario.hasMany(models.Post, {as:"posts", foreignKey: "usuarios_id"});
+    Usuario.associate = (models) => {
+        //relação 1:N
+        Usuario.hasMany(models.Post, {as:"posts", foreignKey: "usuarios_id"});
 
-    //     Usuario.belongsToMany(models.Post, {
-    //         as: "curtiu", //alias da relação
-    //         through: "curtidas", //tabela intermediária
-    //         foreignKey: "usuarios_id",
-    //         otherKey: "posts_id",
-    //         timestamps: false
-    //     });
-    // }
+        Usuario.belongsToMany(models.Post, {
+            as: "curtiu", //alias da relação
+            through: "curtidas", //tabela intermediária
+            foreignKey: "usuarios_id",
+            otherKey: "posts_id",
+            timestamps: false
+        });
+    }
 
     return Usuario;
 }
