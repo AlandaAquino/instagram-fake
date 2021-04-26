@@ -1,0 +1,160 @@
+/* */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+main {
+    display: flex;
+    justify-content: center; /* alinhamento na horizontal */ /* */
+    align-items: center; /* alinhamento na vertical */
+    padding: 50px 0px; /* 50px para cima e para baixo, 0px para as laterais */
+
+}
+
+.logo {
+    width: 150px;
+}
+
+.login {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 40px 20px;
+    margin: 30px;
+
+}
+
+.login form input {
+    width: 100%;
+    height: 30px;
+    margin: 7px 0;
+    padding: 5px;
+    text-align: left;
+    border-radius: 6px;
+    border: 1px solid #ccc;    
+}
+
+.login form button {
+    background-color: #0095f6;
+    color: #ffff;
+    padding: 7px 10px;
+    margin: 20px 0;
+    width: 100%;
+    border: none;
+    
+}
+
+.registro{
+    width: 450px;
+    border: 1px solid #ccc;
+    padding: 40px 20px;
+    margin: 30px;
+}
+
+.registro form input {
+    width: 100%;
+    height: 30px;
+    margin: 7px 0;
+    padding: 5px;
+    text-align: left;
+    border-radius: 6px;
+    border: 1px solid #ccc;    
+}
+
+.registro form button {
+    background-color: #0095f6;
+    color: #ffff;
+    padding: 7px 10px;
+    margin: 20px 0;
+    width: 100%;
+    border: none;
+    
+}
+
+.cta-cadastro-registro{
+    border: 1px solid #ccc;
+    padding: 7px 10px;
+    margin: 20px 0;
+    text-align: center;
+    color: black;
+}
+
+.termosepoliticas {
+    text-align: center;
+}
+
+.documentacao {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.post {
+    border: 1px solid #ccc;
+    width: 500px;
+    align-items: center;
+    margin: 20px auto;
+       
+}
+
+.perfil{
+    width: 50px;
+}
+
+.publicacao {
+    width: 500px;
+}
+
+.usuario {
+    display: flex;
+    padding-left: 10px;
+    margin: 7px 10px;
+
+}
+
+.usuario div {
+    display: flex;
+    padding-left: 300px;
+    
+}
+
+.legenda {
+    display: flex;
+    
+}
+ .legenda p {
+    padding: 0px 7px;
+ }
+
+.legenda img {
+    padding-left: 30px;
+}
+
+.comentario {
+    display: flex;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.comentario input {
+    width: 400px;
+    height: 20px;
+    border: none;
+    background-color: #fafafa;
+    margin: 20px 5px;
+    padding: 20px;
+    
+    
+}
+
+.publicar {
+    text-decoration: none;
+    margin: 30px 0;
+}
+article .post {
+
+}

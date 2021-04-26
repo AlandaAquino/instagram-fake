@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <article class="post">
+        <header class="usuario">
+            <img src="img/avatar-example.png" alt="foto de perfil" class="perfil">
+            <a href="#">alandaaquino</a>
+            <div>
+                <img src="img/icons/more-vertical.svg" alt="mais">
+            </div>
+        </header>
+        <% for (let post of listaPosts) { %> 
+        <section class="postagem">
+            <img src="img/publication_example.jpg" alt="publicação com foto de pratos de comida" class="publicacao">
+            <div class="legenda">
+            <p>Oi gente tudo bem?</p>
+                <img src="img/icons/heart.svg" alt="ícone de coração">
+                <p>3 likes</p>
+                <p>Postado no dia 16/04/2020</p>
+            </div>
+            <ol>
+                <li>Oi! Tirando os problemas, tudo certo!</li>
+                <li>Oi gente é o !@#!$%! Meu nome agora é Zé Pequeno!</li>
+                <li>Oi pra você também!</li>
+            </ol>
+        </section>
+        <% } %> 
+
+        <footer class="comentario">
+            <div>
+                <input type="text" id="comentario" name="comentario" placeholder="Adicione um comentário...">
+            </div>
+            <a href="#" class="publicar">Publicar</a>
+
+        </footer>
+    </article>
+</body>
 </html>
